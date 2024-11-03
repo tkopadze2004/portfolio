@@ -1,0 +1,11 @@
+<div class="container">
+  <div [ngClass]="currentMode$ | ngrxPush">
+    <a routerLink="/">Home</a>
+    <a routerLink="profile">Profile</a>
+  </div>
+  <img
+    [src]="(currentMode$ | ngrxPush) + '-mode.svg'"
+    alt="Toggle mode"
+    (click)="toggleMode()"
+  />
+</div>

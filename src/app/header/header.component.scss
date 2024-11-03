@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: #a9a9a9;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    color: #e5e5e5;
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+      color: #b3b3b3;
+    }
+  }
+
+  img {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+  }
+}
