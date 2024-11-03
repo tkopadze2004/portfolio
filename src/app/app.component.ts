@@ -3,11 +3,12 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { AsyncPipe, NgClass } from '@angular/common';
 import { Observable } from 'rxjs';
 import { ThemeService, TMode } from './theme.service';
+import { PushPipe } from '@ngrx/component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgClass, AsyncPipe, RouterLink],
+  imports: [RouterOutlet, NgClass, AsyncPipe, RouterLink,PushPipe],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

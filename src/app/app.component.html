@@ -7,7 +7,7 @@
     <div class="header__actions">
       <div class="header__actions__mode-toggler">
         <img
-          [src]="(currentMode$ | async) + '-mode.svg'"
+          [src]="(currentMode$ | ngrxPush) + '-mode.svg'"
           alt="Toggle mode"
           (click)="toggleMode()"
         />
