@@ -1,1 +1,23 @@
-hi
+<div class="wrapper">
+  <div class="header poppins-medium">
+    <div class="header__links" [ngClass]="currentMode$ | async">
+      <a routerLink="/" routerLinkActive="active">Home</a>
+      <a routerLink="profile" routerLinkActive="active">Profile</a>
+    </div>
+    <div class="header__actions">
+      <div class="header__actions__mode-toggler">
+        <img
+          [src]="(currentMode$ | async) + '-mode.svg'"
+          alt="Toggle mode"
+          (click)="toggleMode()"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content__inner">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
