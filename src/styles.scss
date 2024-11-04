@@ -1,14 +1,17 @@
 html,
 body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   &.dark {
-    transition: background-color 0.4s ease, color 0.4s ease;
-    background-image: url("/background.png");
+    transition: background-color 0.4s ease, color 0.5s ease-in-out;
+    background-color: black;
     min-height: 100%;
-
+    color: #dff9f3;
   }
 
   &.light {
-    transition: background-color 0.4s ease, color 0.4s ease;
-    background-color: #FFFFFF;
+    transition: background-color 0.4s ease, color 0.5s ease-in-out;
+    background-color: #ffffff;
   }
 }

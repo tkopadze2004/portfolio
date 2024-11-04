@@ -1,12 +1,19 @@
 <div class="container">
-  <div>
-    <a routerLink="/">Home</a>
-    <a routerLink="about">About</a>
-    <a routerLink="projects">Projects</a>
+  <div class="container__left">
+    <span class="container__left--title">Welcome!</span>
   </div>
-  @if (currentMode$ | ngrxPush; as mode) {<img
-    [src]="mode + '-mode.svg'"
-    alt="Toggle mode"
-    (click)="toggleMode(mode)"
-  />}
+  <div class="container__right">
+    <nav>
+      <ul>
+        <li routerLink="/">Home</li>
+        <li routerLink="about">About</li>
+        <li routerLink="projects">Projects</li>
+      </ul>
+    </nav>
+    @if (currentMode$ | ngrxPush; as mode) {<img
+      [src]="mode + '-mode.svg'"
+      alt="Toggle mode"
+      (click)="toggleMode(mode)"
+    />}
+  </div>
 </div>

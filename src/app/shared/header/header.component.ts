@@ -6,11 +6,12 @@ import { TMode } from '../../core/types/theme-mode.type';
 import { selectThemeMode } from '../../store/selectors/theme-mode.selectors';
 import { setThemeMode } from '../../store/actions/theme-mode.actions';
 import { PushPipe } from '@ngrx/component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgClass, PushPipe],
+  imports: [NgClass, PushPipe,RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
@@ -25,7 +26,7 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.updateRootClass('light', 'dark');
+    this.updateRootClass('dark', 'light');
   }
 
   private updateRootClass(oldMode: TMode, newMode: TMode) {
