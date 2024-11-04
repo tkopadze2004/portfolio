@@ -1,7 +1,7 @@
 import { NgClass } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ThemeService, TMode } from '../theme.service';
+import { ThemeService, TMode } from '../../theme.service';
 import { PushPipe } from '@ngrx/component';
 import { RouterLink } from '@angular/router';
 
