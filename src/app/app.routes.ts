@@ -1,14 +1,19 @@
 import { Routes } from '@angular/router';
-import { RgacComponent } from './rgac/rgac.component';
-import { ProfileComponent } from './profile/profile.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 export const routes: Routes = [
   {
-    path:'',
-    component:RgacComponent
+    path: '',
+    component: HomeComponent,
   },
   {
-    path:'profile',
-    component:ProfileComponent
-  }
+    path: 'about',
+    component: AboutComponent,
+  },
+  {
+    path: 'projects',
+    component: ProjectsComponent,
+  },
 ];

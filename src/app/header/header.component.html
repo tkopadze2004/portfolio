@@ -1,7 +1,8 @@
 <div class="container">
   <div [ngClass]="currentMode$ | ngrxPush">
     <a routerLink="/">Home</a>
-    <a routerLink="profile">Profile</a>
+    <a routerLink="about">About</a>
+    <a routerLink="projects">Projects</a>
   </div>
   <img
     [src]="(currentMode$ | ngrxPush) + '-mode.svg'"
