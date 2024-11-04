@@ -1,9 +1,10 @@
 import { NgClass } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ThemeService, TMode } from '../../theme.service';
 import { PushPipe } from '@ngrx/component';
 import { RouterLink } from '@angular/router';
+import { ThemeService } from '../../theme.service';
+import { TMode } from '../../core/types/theme-mode.type';
 
 @Component({
   selector: 'app-header',
@@ -13,12 +14,9 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  public currentMode$!: Observable<TMode>;
   private appThemeService: ThemeService = inject(ThemeService);
-
-  constructor() {
-    this.currentMode$ = this.appThemeService.getMode();
-  }
+  public currentMode$: Observable<TMode> = this.appThemeService.getMode();
+  
   public toggleMode(): void {
     const newMode: TMode =
       this.appThemeService.getModeValue() === 'light' ? 'dark' : 'light';

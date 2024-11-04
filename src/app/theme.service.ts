@@ -1,7 +1,7 @@
 import { inject, Injectable, Renderer2, RendererFactory2 } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { TMode } from './core/types/theme-mode.type';
 
-export type TMode = 'light' | 'dark';
 
 @Injectable({ providedIn: 'root' })
 export class ThemeService {
