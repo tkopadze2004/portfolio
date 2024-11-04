@@ -1,5 +1,5 @@
-import { TMode } from '../../theme.service';
+import { TMode } from "../../core/types/theme-mode.type";
 
-export interface IThemModeState {
+export interface IThemState {
   mode: TMode;
 }
