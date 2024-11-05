@@ -1,19 +1,18 @@
 <header class="container">
   <div class="container__left">
-    <span >Welcome!</span>
+    <span>Welcome!</span>
   </div>
   <div class="container__right">
     <nav>
       <ul>
-        <li routerLink="/">Home</li>
-        <li routerLink="about">About</li>
-        <li routerLink="projects">Projects</li>
+        <li routerLink="/" [ngClass]="{'dark': (currentMode$ | ngrxPush) === 'dark', 'light': (currentMode$ | ngrxPush) === 'light'}">Home</li>
+        <li routerLink="about" [ngClass]="{'dark': (currentMode$ | ngrxPush) === 'dark', 'light': (currentMode$ | ngrxPush) === 'light'}">About</li>
+        <li routerLink="projects" [ngClass]="{'dark': (currentMode$ | ngrxPush) === 'dark', 'light': (currentMode$ | ngrxPush) === 'light'}">Projects</li>
       </ul>
     </nav>
     @if (currentMode$ | ngrxPush; as mode) {<img
       [src]="mode + '-mode.svg'"
       alt="Toggle mode"
       (click)="toggleMode(mode)"
-    />}
-  </div>
+    />}  </div>
 </header>

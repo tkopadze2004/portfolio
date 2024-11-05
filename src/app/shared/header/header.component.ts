@@ -1,4 +1,4 @@
-import { NgClass } from '@angular/common';
+import { NgClass, NgIf } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgClass, PushPipe,RouterLink],
+  imports: [NgClass, PushPipe,RouterLink,NgIf],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
