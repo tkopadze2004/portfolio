@@ -3,9 +3,9 @@
   @if (currentMode$ | ngrxPush ; as mode) {
       <div class="cont">
         <ul>
-          <li routerLink="/" [ngClass]="{'dark':mode=== 'dark', 'light': mode === 'light'}">Home</li>
-          <li routerLink="about" [ngClass]="{'dark': mode === 'dark', 'light': mode=== 'light'}">About</li>
-          <li routerLink="projects" [ngClass]="{'dark': mode === 'dark', 'light': mode === 'light'}">Projects</li>
+          <li routerLink="/" [ngClass]="mode">Home</li>
+          <li routerLink="about" [ngClass]="mode">About</li>
+          <li routerLink="projects" [ngClass]="mode">Projects</li>
         </ul>
       <img
         [src]="mode + '-mode.svg'"
