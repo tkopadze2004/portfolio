@@ -1,11 +1,9 @@
 <footer>
-    <div class="left">
-        <img src="panda.png" />
-        <div class="left__text">get in touch</div>
-    </div>
-      <div class="center">
-        @for(menu of footerMenu ; track menu){
-        <app-footer-link-item [title]="menu.title" [links]="menu.links" />
-        }
-    </div>
+  <div class="text">Conceived and Developed by  Tamta Kopadze</div>
+  <span class="copy"> &copy; 2024 Tamta </span>
+  <div>
+    @for(menu of footerMenu ; track menu){
+    <app-footer-link-item [links]="menu.links" />
+    }
+  </div>
 </footer>

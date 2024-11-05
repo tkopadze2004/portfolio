@@ -1,6 +1,5 @@
-<div class="title">{{ title }}</div>
 <div class="links">
-  @for(link of links; track link){
-  <a [href]="link.url"  class="links__link">{{ link.title }}</a>
+  @for(link of links(); track link){
+  <a [href]="link.url"> <img [src]="link.image" alt="image" /> </a>
   }
 </div>

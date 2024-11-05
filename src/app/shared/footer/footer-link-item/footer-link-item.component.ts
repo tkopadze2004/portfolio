@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-footer-link-item',
@@ -8,6 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './footer-link-item.component.scss',
 })
 export class FooterLinkItemComponent {
-  @Input() title: string = '';
-  @Input() links: { title: string; url: string }[] = [];
+  public links = input<{ image: string; url: string }[]>();
 }

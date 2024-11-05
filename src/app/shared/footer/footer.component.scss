@@ -1,26 +1,30 @@
 footer {
-  display: block;
-  height: 443px;
   display: flex;
+  padding: 13px 30px 13px 0px;
   align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  backdrop-filter: blur(10px);
+  color: white;
+  background-color: rgb(0, 0, 0);
 
-  .left {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  .text {
+    font-size: 18px;
+    font-family: "Fira Sans", sans-serif;
 
-    img {
-      width: 50%;
-    }
-
-    &__text {
-      font-size: 50px;
-    }
+    word-spacing: 4px;
   }
+}
 
-  .center {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 72px;
+@media (max-width: 767px) {
+  footer {
+    padding: 13px 2px;
+    font-size: 14px;
+
+    .text {
+      font-size: 14px;
+      font-family: "Fira Sans", sans-serif;
+      word-spacing: 2px; 
+    }
   }
 }

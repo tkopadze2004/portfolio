@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FOOTER_MENU } from '../../data/footer-menu';
+import { FOOTER_MENU } from '../../core/data/footer-menu';
 import { FooterLinkItemComponent } from './footer-link-item/footer-link-item.component';
 
 @Component({

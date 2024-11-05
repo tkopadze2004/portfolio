@@ -1,21 +1,20 @@
+.links {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 25px;
 
-    .title {
-      font-weight: 500;
-      line-height: 175%;
-    }
+  img {
+    width: 17px;
+  }
+}
+
+@media (max-width: 767px) {
   .links {
-    display: flex;
-    flex-direction: column;
-    margin-top: 16px;
-    gap: 16px;
-    &__link {
-      cursor: pointer;
-      font-weight: 500;
-      line-height: 175%;
-      text-decoration: none;
+    gap: 20px;
 
-      &:hover{
-        color: var(--neutral-black-b900);
-      }
+    img {
+      width: 15px;
     }
   }
+}
