@@ -1,0 +1,47 @@
+.cotainer{
+
+padding: 80px  120px;   font-size: 70px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+
+
+
+  &__text{
+    font-size: 20px;
+    font-style: italic;
+    width: 60%;
+  }
+
+  &__cotainer{
+    font-size: 20px;
+
+  }
+}
+
+.fullname{
+  background: linear-gradient(90deg, #007292, #1A2E50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// .container {
+//   font-family: Arial, sans-serif;
+//   font-size: 24px;
+//   white-space: nowrap;
+//   overflow: hidden;
+// }
+
+#typingText {
+  border-right: 2px solid #3b82f6;
+  padding-right: 2px;
+  animation: blinkCursor 0.7s step-end infinite;
+}
+
+@keyframes blinkCursor {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #3b82f6;
+  }
+}
