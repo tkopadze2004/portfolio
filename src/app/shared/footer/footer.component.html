@@ -1,17 +1,11 @@
-<footer class="container-fluid">
-  <div class="container footer">
-    <div class="footer__left">
-      <div class="logo">
+<footer>
+    <div class="left">
         <img src="panda.png" />
-        <div class="logo__brand">get in touch</div>
-      </div>
+        <div class="left__text">get in touch</div>
     </div>
-    <div class="footer__center">
-      <div class="footer__center">
+      <div class="center">
         @for(menu of footerMenu ; track menu){
         <app-footer-link-item [title]="menu.title" [links]="menu.links" />
         }
-      </div>
     </div>
-  </div>
 </footer>

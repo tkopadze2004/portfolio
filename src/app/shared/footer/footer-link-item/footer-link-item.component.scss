@@ -1,20 +1,21 @@
 
-  //   .title {
-  //     font-weight: 500;
-  //     line-height: 175%;
-  //   }
-  // .links {
-  //   display: flex;
-  //   flex-direction: column;
-  //   margin-top: 16px;
-  //   gap: 16px;
-  //   &__link {
-  //     cursor: pointer;
-  //     font-weight: 500;
-  //     line-height: 175%;
-  //     text-decoration: none;
+    .title {
+      font-weight: 500;
+      line-height: 175%;
+    }
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    gap: 16px;
+    &__link {
+      cursor: pointer;
+      font-weight: 500;
+      line-height: 175%;
+      text-decoration: none;
 
-  //     &:hover{
-  //     }
-  //   }
-  // }
+      &:hover{
+        color: var(--neutral-black-b900);
+      }
+    }
+  }
