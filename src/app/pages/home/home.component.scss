@@ -1,9 +1,10 @@
 .cotainer{
 
-padding: 80px  120px;   font-size: 70px;
-font-family: 'Nunito', sans-serif;
+padding: 80px  120px 0 120px;
+ font-size: 70px;
+// font-family: 'Nunito', sans-serif;
 
-  // font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 90px;
 
@@ -27,12 +28,7 @@ font-family: 'Nunito', sans-serif;
   -webkit-text-fill-color: transparent;
 }
 
-// .container {
-//   font-family: Arial, sans-serif;
-//   font-size: 24px;
-//   white-space: nowrap;
-//   overflow: hidden;
-// }
+
 
 #typingText {
   border-right: 2px solid #3b82f6;
@@ -48,11 +44,11 @@ font-family: 'Nunito', sans-serif;
     border-color: #3b82f6;
   }
 }
+
+
 .intro-text {
-  background-color: #f9fafb; // light gray background
   padding: 2rem; // space around the content
   border-radius: 1rem; // rounded corners
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // subtle shadow
   max-width: 48rem; // limit the width
   margin: 4rem auto; // center the content with margin on top and bottom
   text-align: center; // center the text
@@ -62,11 +58,8 @@ font-family: 'Nunito', sans-serif;
     font-weight: 600; // semi-bold text
     color: #2d3748; // dark gray text
     line-height: 1.5; // comfortable line spacing
-    margin: 0; // remove default margin
   }
 
-  // Optional: Add a fade-in effect when the page loads
-  opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
 }
 
@@ -77,12 +70,9 @@ font-family: 'Nunito', sans-serif;
 
 
 .get-in-touch {
-  padding: 3rem; // Add padding for spacing
-  border-radius: 1rem; // Rounded corners
   max-width: 48rem;
-  margin: 4rem auto;
+  margin: 0rem auto;
   text-align: center;
-  transition: background-color 0.3s ease;
 
   h2 {
     font-size: 2rem;
@@ -94,17 +84,7 @@ font-family: 'Nunito', sans-serif;
     font-size: 1.125rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-  }
 
-  .contact-link {
-    color: #3182ce; // Blue color for links
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: #63b3ed; // Lighter blue on hover
-    }
   }
 
 
