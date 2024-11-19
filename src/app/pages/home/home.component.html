@@ -17,13 +17,13 @@
 
   <div class="get-in-touch">
     <h2>Get in Touch</h2>
-    <p>
-      Open to new opportunities and collaborations. Let's connect!
-
-
-    </p>
-    <div *ngFor="let menu of footerMenu">
-      <app-footer-link-item [links]="menu.links"></app-footer-link-item>
-    </div>
+    <p>Open to new opportunities and collaborations. Let's connect!</p>
+    @for (menu of footerMenu; track $index) {
+    <app-footer-link-item
+      [links]="menu.links"
+      [themeMode]="currentMode$ | ngrxPush"
+    >
+    </app-footer-link-item>
+    }
   </div>
 </div>
