@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { FOOTER_MENU } from '../../core/data/footer-menu';
 import { FooterLinkItemComponent } from '../../shared/footer/footer-link-item/footer-link-item.component';
 import { Observable } from 'rxjs';
@@ -14,9 +14,9 @@ import { TMode } from '../../core/types/theme-mode.type';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
   private readonly store: Store = inject(Store);
-  private text: string = 'Angular Developer';
+  private text: string = 'Angular Developer ';
   public displayedText: string = '';
   private typingSpeed: number = 100;
   public footerMenu = FOOTER_MENU;

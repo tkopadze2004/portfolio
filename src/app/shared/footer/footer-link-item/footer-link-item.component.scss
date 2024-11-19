@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   gap: 40px;
 
-  img {
+  img {  cursor: pointer;
+
     width: 46px;
   }
 }

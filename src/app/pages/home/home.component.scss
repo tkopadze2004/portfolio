@@ -15,12 +15,11 @@
 
   #typingText {
     border-right: 2px solid #3b82f6;
-    padding-right: 2px;
-    animation: blinkCursor 0.7s step-end infinite;
+    padding-right: 14px;
+    animation: blinkCursor 1s step-end infinite; 
     font-size: 85px;
     font-style: oblique;
     font-family: 'Quicksand', sans-serif;
-
 
   }
 
