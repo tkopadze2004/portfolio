@@ -3,15 +3,14 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
+  transition: background-color 0.4s ease, color 0.5s ease-in-out;
+
   &.dark {
-    transition: background-color 0.4s ease, color 0.5s ease-in-out;
     background-color: black;
     color: #f4f4ff;
   }
 
   &.light {
-    transition: background-color 0.4s ease, color 0.5s ease-in-out;
-    background-color: #ffffff;
+    background-color: rgb(235, 235, 235);
   }
 }
