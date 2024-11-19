@@ -5,7 +5,7 @@ import { FooterLinkItemComponent } from './footer-link-item/footer-link-item.com
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [FooterLinkItemComponent],
+  imports: [],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })

@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { FOOTER_MENU } from '../../core/data/footer-menu';
+import { FooterLinkItemComponent } from "../../shared/footer/footer-link-item/footer-link-item.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [FooterLinkItemComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -11,6 +13,7 @@ export class HomeComponent {
   text: string = 'Angular Developer'; // Text to display
   displayedText: string = '';          // Text that will be shown one character at a time
   typingSpeed: number = 100;           // Adjust speed (in ms) for typing
+  public footerMenu = FOOTER_MENU;
 
   ngOnInit() {
     this.startTyping();
@@ -27,6 +30,6 @@ export class HomeComponent {
       }
     }, this.typingSpeed);
   }
-  
+
 
 }
