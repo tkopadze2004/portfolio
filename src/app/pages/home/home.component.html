@@ -1,25 +1,21 @@
-<div class="cotainer">
+<div class="container">
   <span>Hi, </span> <br />
-  <span>I'M <span class="fullname">TAMTA </span> </span> <br />
+  <span>I'M <span class="fullname">TAMTA</span></span> <br />
   <span id="typingText">{{ displayedText }}</span>
 
   <div class="intro-text">
     <p>
-      I'm passionate about building user-centric web applications. As an Angular developer, I focus on creating seamless, efficient, and responsive applications that deliver exceptional performance across devices.
+      I'm passionate about building user-centric web applications. As an Angular developer, I focus on creating seamless, efficient, and responsive applications.
     </p>
   </div>
-
 
   <div class="get-in-touch">
     <h2>Get in Touch</h2>
     <p>
-      I'm always open to new opportunities, collaborations, and questions. Feel free to reach out if you'd like to discuss a project, need assistance, or just want to connect. I'm excited to hear from you!
+      I'm always open to new opportunities and collaborations. Feel free to reach out for projects, assistance, or just to connect.
     </p>
-    <div>
-    @for(menu of footerMenu ; track menu){
-      <app-footer-link-item [links]="menu.links" />
-      }
+    <div *ngFor="let menu of footerMenu">
+      <app-footer-link-item [links]="menu.links"></app-footer-link-item>
     </div>
   </div>
-
 </div>

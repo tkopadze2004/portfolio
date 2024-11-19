@@ -1,92 +1,71 @@
-.cotainer{
-
-padding: 80px  120px 0 120px;
- font-size: 70px;
-// font-family: 'Nunito', sans-serif;
-
+.container {
+  padding: 80px 120px 0;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 90px;
 
-
-
-  &__text{
-    font-size: 20px;
-    font-style: italic;
-    width: 60%;
+  .fullname {
+    background: linear-gradient(90deg, #007292, #1A2E50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  &__cotainer{
-    font-size: 20px;
-
-  }
-}
-
-.fullname{
-  background: linear-gradient(90deg, #007292, #1A2E50);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
-
-#typingText {
-  border-right: 2px solid #3b82f6;
-  padding-right: 2px;
-  animation: blinkCursor 0.7s step-end infinite;
-}
-
-@keyframes blinkCursor {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #3b82f6;
-  }
-}
-
-
-.intro-text {
-  padding: 2rem; // space around the content
-  border-radius: 1rem; // rounded corners
-  max-width: 48rem; // limit the width
-  margin: 4rem auto; // center the content with margin on top and bottom
-  text-align: center; // center the text
-
-  p {
-    font-size: 1.25rem; // set text size
-    font-weight: 600; // semi-bold text
-    color: #2d3748; // dark gray text
-    line-height: 1.5; // comfortable line spacing
+  #typingText {
+    border-right: 2px solid #3b82f6;
+    padding-right: 2px;
+    animation: blinkCursor 0.7s step-end infinite;
   }
 
-  animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-
-.get-in-touch {
-  max-width: 48rem;
-  margin: 0rem auto;
-  text-align: center;
-
-  h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+  @keyframes blinkCursor {
+    0%, 100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #3b82f6;
+    }
   }
 
-  p {
-    font-size: 1.125rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+  .intro-text {
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 48rem;
+    margin: 4rem auto;
+    text-align: center;
 
+    p {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #2d3748;
+      line-height: 1.5;
+    }
+
+    animation: fadeIn 1.5s ease-in-out forwards;
   }
 
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
+  .get-in-touch {
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: center;
 
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+  }
 }
