@@ -3,14 +3,30 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: background-color 0.4s ease, color 0.5s ease-in-out;
+  transition: background-color 0.2s ease, color 0.5s ease-in-out;
 
   &.dark {
     background-color: black;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 15px 15px;
     color: #f4f4ff;
   }
-
   &.light {
-    background-color: rgb(235, 235, 235);
+    position: relative;
+    color: #333;
+  }
+
+  &.light::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f4;
+    background-image: radial-gradient(rgb(105, 41, 41) 1px, transparent 1px);
+    background-size: 40px 40px;
+    filter: blur(2px);
+    z-index:-1;
   }
 }

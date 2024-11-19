@@ -1,5 +1,5 @@
 .container {
-  padding: 30px 120px 0;
+  padding: 30px 120px ;
   font-family: 'Roboto', sans-serif;
   .head {
     font-size: 100px;
@@ -16,7 +16,7 @@
   #typingText {
     border-right: 2px solid #3b82f6;
     padding-right: 14px;
-    animation: blinkCursor 1s step-end infinite; 
+    animation: blinkCursor 1s step-end infinite;
     font-size: 85px;
     font-style: oblique;
     font-family: 'Quicksand', sans-serif;
