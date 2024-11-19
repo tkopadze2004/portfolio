@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { FOOTER_MENU } from '../../core/data/footer-menu';
 import { FooterLinkItemComponent } from "../../shared/footer/footer-link-item/footer-link-item.component";
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FooterLinkItemComponent],
+  imports: [FooterLinkItemComponent,NgFor],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

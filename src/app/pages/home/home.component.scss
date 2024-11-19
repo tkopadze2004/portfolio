@@ -1,23 +1,32 @@
 .container {
-  padding: 80px 120px 0;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: 90px;
+  padding: 30px 120px 0;
+  font-family: 'Roboto', sans-serif;
+  .head {
+    font-size: 100px;
+    font-weight: bold;
 
-  .fullname {
-    background: linear-gradient(90deg, #007292, #1A2E50);
+  }
+  .name {
+    background: linear-gradient(90deg, #007292, #1a2e50);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
   }
 
   #typingText {
     border-right: 2px solid #3b82f6;
     padding-right: 2px;
     animation: blinkCursor 0.7s step-end infinite;
+    font-size: 85px;
+    font-style: oblique;
+    font-family: 'Quicksand', sans-serif;
+
+
   }
 
   @keyframes blinkCursor {
-    0%, 100% {
+    0%,
+    100% {
       border-color: transparent;
     }
     50% {
@@ -26,35 +35,24 @@
   }
 
   .intro-text {
-    padding: 2rem;
-    border-radius: 1rem;
-    max-width: 48rem;
-    margin: 4rem auto;
-    text-align: center;
-
-    p {
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: #2d3748;
-      line-height: 1.5;
-    }
+    max-width: 45rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #2d3748;
+    margin-top: 50px;
 
     animation: fadeIn 1.5s ease-in-out forwards;
   }
 
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+
 
   .get-in-touch {
     max-width: 48rem;
     margin: 0 auto;
     text-align: center;
+    margin-top: 100px;
 
     h2 {
       font-size: 2rem;
@@ -67,5 +65,14 @@
       line-height: 1.6;
       margin-bottom: 1.5rem;
     }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
