@@ -1,6 +1,6 @@
 <div class="container">
   <div class="head">
-    <span>Hi, </span> <br />
+    <span>HI, </span> <br />
     <span>I'M <span class="name">TAMTA</span></span> <br />
     <span id="typingText">{{ displayedText }}</span>
   </div>
@@ -15,9 +15,11 @@
     </p>
   </div>
 
+  <button class="button">explore my Projects</button>
+
   <div class="get-in-touch">
-    <h2>Get in Touch</h2>
-    <p>Open to new opportunities and collaborations. Let's connect!</p>
+    <span class="contact">Let's Connect</span>
+    <p>Don't hesitate to reach out!</p>
     @for (menu of footerMenu; track $index) {
     <app-footer-link-item
       [links]="menu.links"

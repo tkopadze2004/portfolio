@@ -1,16 +1,17 @@
 .container {
-  padding: 30px 120px ;
-  font-family: 'Roboto', sans-serif;
+  padding: 60px 120px 20px;
+
   .head {
     font-size: 100px;
     font-weight: bold;
-
+    font-family: "Arial Arabic", Arial, sans-serif;
   }
+
   .name {
     background: linear-gradient(90deg, #007292, #1a2e50);
     -webkit-background-clip: text;
+    text-transform: uppercase;
     -webkit-text-fill-color: transparent;
-
   }
 
   #typingText {
@@ -19,59 +20,132 @@
     animation: blinkCursor 1s step-end infinite;
     font-size: 85px;
     font-style: oblique;
-    font-family: 'Quicksand', sans-serif;
-
-  }
-
-  @keyframes blinkCursor {
-    0%,
-    100% {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #3b82f6;
-    }
+    font-family: "Quicksand", sans-serif;
   }
 
   .intro-text {
-    max-width: 45rem;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 600;
-    color: #2d3748;
+    max-width: 43rem;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
     margin-top: 50px;
-
-    animation: fadeIn 1.5s ease-in-out forwards;
+    font-family: "Inter", sans-serif;
   }
 
-
-
   .get-in-touch {
-    max-width: 48rem;
     margin: 0 auto;
     text-align: center;
     margin-top: 100px;
+    font-family: "Roboto", sans-serif;
 
-    h2 {
-      font-size: 2rem;
-      font-weight: 700;
+    .contact {
+      font-size: 35px;
       margin-bottom: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
     }
 
     p {
-      font-size: 1.125rem;
-      line-height: 1.6;
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
       margin-bottom: 1.5rem;
+    }
+  }
+
+  .button {
+    margin-top: 15px;
+    background-color: #007292;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    color: #d1d5db;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 40px 35px 20px;
+
+    .head {
+      font-size: 70px;
+    }
+
+    #typingText {
+      font-size: 43px;
+    }
+
+    .intro-text {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .button {
+      margin-top: 13px;
+      padding: 10px 18px;
+      font-size: 14px;
+      letter-spacing: 0.6px;
+    }
+
+    .get-in-touch {
+      margin-top: 90px;
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 30px 30px 20px;
+
+    .head {
+      font-size: 50px;
+    }
+
+    #typingText {
+      font-size: 27px;
+    }
+
+    .intro-text {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .button {
+      margin-top: 16px;
+      padding: 9px 16px;
+      font-size: 13px;
+      letter-spacing: 0.6px;
+    }
+
+    .get-in-touch {
+      margin-top: 70px;
+
+      .contact {
+        font-size: 32px;
+      }
+
+      p {
+        margin-bottom: 18px;
+      }
     }
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
+@keyframes blinkCursor {
+  0%,
   100% {
-    opacity: 1;
+    border-color: transparent;
+  }
+  50% {
+    border-color: #3b82f6;
   }
 }
