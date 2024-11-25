@@ -39,8 +39,9 @@
       font-size: 20px;
       width: 600px;
     }
-}}
-.skills{
+  }
+}
+.skills {
   color: #fff;
   padding: 2rem;
   text-align: center;
@@ -52,9 +53,11 @@
   }
 
   &__wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 50px 40%;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
+    gap: 1.5rem;
   }
 }
-

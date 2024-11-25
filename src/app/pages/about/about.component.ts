@@ -13,35 +13,52 @@ export class AboutComponent {
   skills = [
     {
       name: 'Angular',
-      icon: 'socials/fb-light.png',
+      icon: 'skills/angular.png',
     },
     {
       name: 'TypeScript',
-      icon: 'socials/github-light.png',
+      icon: 'skills/ts.png',
     },
     {
       name: 'Tailwind CSS',
-      icon: 'socials/fb-light.png',
+      icon: 'skills/tailwind.png',
+
     },
     {
-      name: 'RxJS',
-      icon: 'socials/github-light.png',
+      name: 'npm',
+      icon: 'skills/npm.png',
     },
     {
-      name: 'SCSS',
-      icon: 'socials/github-light.png',
+      name: 'sass',
+      icon: 'skills/sass.png',
+    },
+    {
+      name: 'css',
+      icon: 'skills/css.png',
+    },
+    {
+      name: 'ngrx',
+      icon: 'skills/ngrx.png',
     },
     {
       name: 'Bootstrap',
-      icon: 'socials/github-light.png',
+      icon: 'skills/bootstrap.png',
     },
     {
       name: 'JavaScript',
-      icon: 'socials/github-light.png',
+      icon: 'skills/js.png',
     },
     {
       name: 'Git',
-      icon: 'socials/github-light.png',
+      icon: 'skills/git.png',
+    },
+    {
+      name: 'postman',
+      icon: 'skills/postman.png',
+    },
+    {
+      name: 'firebase',
+      icon: 'skills/firebase.png',
     },
   ];
 }
