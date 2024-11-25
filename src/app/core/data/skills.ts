@@ -55,4 +55,8 @@ export const SKILLS = [
     name: 'firebase',
     icon: 'firebase',
   },
+  {
+    name: 'swagger',
+    icon: 'swagger',
+  },
 ];
