@@ -6,6 +6,7 @@ import { Store } from '@ngrx/store';
 import { selectThemeMode } from '../../store/selectors/theme-mode.selectors';
 import { PushPipe } from '@ngrx/component';
 import { SKILLS } from '../../core/data/skills';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-about',
