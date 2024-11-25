@@ -1,0 +1,16 @@
+
+.item {
+  border: 1px solid red;
+  border-radius: 50%;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+
+
+&:hover {
+  transform: scale(1.05);
+}
+}
+.skill-icon {
+  width: 40px;
+}

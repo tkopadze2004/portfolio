@@ -6,11 +6,12 @@ import { Store } from '@ngrx/store';
 import { selectThemeMode } from '../../store/selectors/theme-mode.selectors';
 import { PushPipe } from '@ngrx/component';
 import { TMode } from '../../core/types/theme-mode.type';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FooterLinkItemComponent, PushPipe],
+  imports: [FooterLinkItemComponent, PushPipe,RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

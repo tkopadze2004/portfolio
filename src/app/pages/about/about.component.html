@@ -1,1 +1,29 @@
-<p>about works!</p>
+<div class="about">
+  <div class="about__me">
+    <div class="about__me--title">who i am</div>
+    <p class="about__me--desc">
+      Hi, I’m Tamta from Tbilisi, Georgia. I’m an Angular developer currently
+      working at Komoeki, where I focus on building high-performance,
+      user-friendly web applications. I’m passionate about creating dynamic and
+      responsive websites and always eager to learn and grow in the tech industry.
+    </p>
+  </div>
+
+  <div class="about__skills">
+    <div class="about__skills--title">about my skills</div>
+    <p class="about__skills--desc">
+      Hi, I’m Tamta from Tbilisi, Georgia. I’m an Angular developer currently
+      working at Komoeki, where I focus on building high-performance,
+      user-friendly web applications. I’m passionate about creating dynamic and
+      responsive websites and always eager to learn and grow in the tech industry.
+    </p>
+  </div>
+</div>
+
+<section class="skills">
+  <h2 class="skills__title">My Skillset</h2>
+  <div class="skills__wrapper">
+    <app-skill-item *ngFor="let skill of skills" [skill]="skill"></app-skill-item>
+  </div>
+</section>
+
