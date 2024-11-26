@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { TMode } from '../core/types/theme-mode.type';
 
 @Component({
@@ -7,6 +7,7 @@ import { TMode } from '../core/types/theme-mode.type';
   imports: [],
   templateUrl: './skill-item.component.html',
   styleUrl: './skill-item.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SkillItemComponent {
   @Input() skill!: { name: string; icon: string };

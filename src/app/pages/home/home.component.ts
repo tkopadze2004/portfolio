@@ -1,4 +1,10 @@
-import { Component, inject, OnInit } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  inject,
+  OnInit,
+} from '@angular/core';
 import { FOOTER_MENU } from '../../core/data/footer-menu';
 import { FooterLinkItemComponent } from '../../shared/footer/footer-link-item/footer-link-item.component';
 import { Observable } from 'rxjs';
@@ -11,16 +17,18 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FooterLinkItemComponent, PushPipe,RouterLink],
+  imports: [FooterLinkItemComponent, PushPipe, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent implements OnInit {
   private readonly store: Store = inject(Store);
   private text: string = 'Angular Developer ';
   public displayedText: string = '';
   private typingSpeed: number = 100;
-  public footerMenu = FOOTER_MENU;
+  public readonly footerMenu = FOOTER_MENU;
+  private readonly cdr = inject(ChangeDetectorRef);
   public currentMode$: Observable<TMode> = this.store.select(selectThemeMode);
 
   ngOnInit() {
@@ -33,6 +41,7 @@ export class HomeComponent implements OnInit{
       if (index < this.text.length) {
         this.displayedText += this.text[index];
         index++;
+        this.cdr.detectChanges();
       } else {
         clearInterval(interval);
       }

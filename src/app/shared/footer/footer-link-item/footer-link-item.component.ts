@@ -1,4 +1,4 @@
-import { Component, Input, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, input } from '@angular/core';
 import { TMode } from '../../../core/types/theme-mode.type';
 
 @Component({
@@ -7,6 +7,8 @@ import { TMode } from '../../../core/types/theme-mode.type';
   imports: [],
   templateUrl: './footer-link-item.component.html',
   styleUrl: './footer-link-item.component.scss',
+  changeDetection:ChangeDetectionStrategy.OnPush
+
 })
 export class FooterLinkItemComponent {
   public links = input<{ image: string; url: string }[]>();
