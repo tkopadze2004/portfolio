@@ -1,10 +1,19 @@
 .container {
   display: flex;
-  align-items: center;     /* Centers vertically */
+  align-items: center;
   flex-direction: column;
   gap: 30px;
-  padding: 10px 300px;
+  padding: 10px 200px;
+  app-project-item {
+    transition: transform 0.3s ease;
+  }
+
   app-project-item:hover {
-    transform: translateY(-8px); /* Lift effect on hover */
+    transform: translateY(-5px);
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    padding: 10px 0px;
   }
 }
