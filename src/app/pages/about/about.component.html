@@ -1,23 +1,28 @@
 <div class="about">
-  <div class="about__me">
-    <div class="about__me--title">who i  <span class="clr">am</span></div>
-    <p class="about__me--desc">
-      Hi, I’m Tamta from Tbilisi, Georgia. I’m an Angular developer currently
-      working at Komoeki, where I focus on building high-performance,
-      user-friendly web applications. I’m passionate about creating dynamic and
-      responsive websites and always eager to learn and grow in the tech
-      industry.
-    </p>
+  <div class="about__container">
+    <!-- <div class="about__content"> -->
+      <h1 class="about__title">
+        Who I <span class="clr">Am</span>
+      </h1>
+      <p class="about__desc">
+        Hi, I’m Tamta from Tbilisi, Georgia. I’m an Angular developer currently
+        working at Komoeki, where I specialize in building high-performance,
+        user-friendly web applications. With a passion for creating dynamic and
+        responsive websites, I am dedicated to enhancing user experiences and
+        continuously advancing my skills to stay ahead in the tech industry.
+      </p>
+    <!-- </div> -->
   </div>
 
-
-
-<section class="skills">
-  <h2 class="skills__title">My Skillset</h2>
-  <div class="skills__wrapper">
-    @for (skill of skills; track skill) {
-    <app-skill-item [skill]="skill" [themeMode]="currentMode$ | ngrxPush">
-    </app-skill-item>
-    }
-  </div>
-</section>
+  <section class="skills">
+    <h2 class="skills__title">My Skillset</h2>
+    <div class="skills__grid">
+      @for (skill of skills; track skill) {
+        <app-skill-item
+          [skill]="skill"
+          [themeMode]="currentMode$ | ngrxPush"
+        />
+      }
+    </div>
+  </section>
+</div>

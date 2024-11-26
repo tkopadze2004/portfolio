@@ -2,51 +2,55 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding-top: 2rem;
-  font-family: "Arial", sans-serif;
+  padding: 1rem 1rem 0;
+  font-family: "Inter", sans-serif;
 
-  &__me {
+  &__container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-family: "Arial Arabic", Arial, sans-serif;
     flex-direction: column;
-
-    &--title {
-      font-size: 3.5rem;
-      font-weight: bold;
-      text-transform: capitalize;
-      margin-bottom: 1rem;
-    }
-
-    &--desc {
-      max-width: 43rem;
-      font-size: 18px;
-      line-height: 1.8;
-      font-weight: 400;
-      font-family: "Inter", sans-serif;
-    }
+    max-width: 1200px;
+    text-align: center;
   }
-.clr{
-    color: #007292;
-;}
-}
-.skills {
-  padding: 2rem;
-  text-align: center;
+
+  // &__content {
+  //   text-align: center;
+  // }
 
   &__title {
-    font-size: 2rem;
-    // color: #a478e3;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+    span.clr {
+      color: #007292;
+    }
   }
 
-  &__wrapper {
+  &__desc {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+}
+
+.skills {
+  padding: 4rem 1rem 2rem;
+  text-align: center;
+  width: 100%;
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  &__grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    padding: 20px 0 0;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
