@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  align-items: center;     /* Centers vertically */
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px 300px;
+  app-project-item:hover {
+    transform: translateY(-8px); /* Lift effect on hover */
+  }
+}
