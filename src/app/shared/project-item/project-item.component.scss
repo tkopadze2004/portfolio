@@ -90,7 +90,7 @@
   display: flex;
   gap: 30px;
 
-  align-items: start;
+  // align-items: start;
   padding: 30px 20px;
   margin: 20px 0;
   border-bottom: 2px solid #007292;
@@ -176,7 +176,7 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .item {
     flex-direction: column;
     text-align: center;
