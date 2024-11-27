@@ -6,14 +6,13 @@ header {
   font-family: "Roboto", sans-serif;
   position: sticky;
   top: -1px;
-  backdrop-filter: blur(10px);
-
+  backdrop-filter: blur(6px);
+  z-index: 1000;
   .text {
     font-size: 26px;
     font-weight: bolder;
     letter-spacing: 10px;
-    font-family: 'Nunito', sans-serif;
-
+    font-family: "Nunito", sans-serif;
   }
 
   .cont {

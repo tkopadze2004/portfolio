@@ -1,8 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  input,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { IProject } from '../../core/interfaces/project-interface';
 
 @Component({
@@ -14,11 +10,5 @@ import { IProject } from '../../core/interfaces/project-interface';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProjectItemComponent {
-  public project = input<IProject>({
-    name: '',
-    description: '',
-    skills: [],
-    link: '',
-    img: '',
-  });
+  public project = input<IProject>();
 }

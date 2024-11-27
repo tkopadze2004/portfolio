@@ -1,15 +1,32 @@
 <div class="item">
   <div class="item__image">
-    <img [src]="project().img" alt="Project Thumbnail" />
+    <img [src]="project()!.img" alt="Project Thumbnail" />
   </div>
   <div class="item__description">
-    <span class="item__title">{{ project().name }}</span>
-    <p class="item__text">{{ project().description }}</p>
+    <span class="item__title">{{ project()!.name }}</span>
+    <p class="item__text">{{ project()!.description }}</p>
     <ul class="item__tools">
-      @for (skill of project().skills; track skill) {
+      @for (skill of project()!.skills; track skill) {
       <li>{{ skill }}</li>
       }
     </ul>
-    <a [href]="project().link" class="item__link">live demo</a>
+    <a [href]="project()!.link" class="item__link-minimal">
+      Live Demo
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="arrow-icon"
+      >
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </a>
   </div>
 </div>
