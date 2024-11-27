@@ -3,13 +3,13 @@
     <img src="image.png" alt="GitHub Logo" />
   </div>
   <div class="item__description">
-    <h3 class="item__title">task manager</h3>
-    <p class="item__text">A short description of what this project is about. It higA short description of what this project is about. It higA short description of what this project is about. It higA short description of what this project is about. It higA short description of what this project is about. It higA short description of what this project is about. It higA short description of what this project is about. It higA short description of what this project is about. It higA short description of what this project is about. It higA short description of what this project is about. It highlights its main features or benefits.</p>
+    <h3 class="item__title">{{ project.name }}</h3>
+    <p class="item__text">{{ project.description }}</p>
     <ul class="item__tools">
-      <li>Angular</li>
-      <li>NgRx</li>
-      <li>TypeScript</li>
+      @for (skill of project.skills; track skill) {
+      <li>{{ skill }}</li>
+      }
     </ul>
-    <a href="#" class="item__link">View Project</a>
+    <a [href]="project.link" class="item__link">View Project</a>
   </div>
 </div>

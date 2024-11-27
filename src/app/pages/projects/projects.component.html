@@ -1,8 +1,5 @@
 <div class="container">
-  <app-project-item /> <app-project-item />
-  <app-project-item />   <app-project-item />
-  <app-project-item />
-  <app-project-item />
-  <app-project-item />
-
+  @for (project of projects; track project) {
+  <app-project-item [project]="project" />
+  }
 </div>

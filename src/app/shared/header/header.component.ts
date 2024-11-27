@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  OnInit,
+} from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { TMode } from '../../core/types/theme-mode.type';
@@ -14,8 +19,7 @@ import { RouterLink } from '@angular/router';
   imports: [NgClass, PushPipe, RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
-  changeDetection:ChangeDetectionStrategy.OnPush
-
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent implements OnInit {
   private readonly store = inject(Store);
