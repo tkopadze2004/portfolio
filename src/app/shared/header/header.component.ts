@@ -26,13 +26,13 @@ export class HeaderComponent implements OnInit {
   public currentMode$: Observable<TMode> = this.store.select(selectThemeMode);
 
   public toggleMode(currentMode: TMode): void {
-    const newMode: TMode = currentMode === 'light' ? 'dark' : 'light';
+    const newMode: TMode = currentMode === 'dark' ? 'light' : 'dark';
     this.store.dispatch(setThemeMode({ mode: newMode }));
     this.updateRootClass(currentMode, newMode);
   }
 
   ngOnInit(): void {
-    this.updateRootClass('dark', 'light');
+    this.updateRootClass('light', 'dark');
   }
 
   private updateRootClass(oldMode: TMode, newMode: TMode) {

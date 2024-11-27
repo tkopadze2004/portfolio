@@ -6,7 +6,7 @@ import { IThemState } from '../state/theme-mode.state';
 
 
 export const initialThemeState: IThemState = {
-  mode: 'light',
+  mode: 'dark',
 };
 
 export const themeReducer = createReducer(
