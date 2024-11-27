@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { TMode } from '../core/types/theme-mode.type';
-import { ISkill } from '../core/interfaces/skill-interface';
+import { TMode } from '../../core/types/theme-mode.type';
+import { ISkill } from '../../core/interfaces/skill-interface';
 
 @Component({
   selector: 'app-skill-item',
