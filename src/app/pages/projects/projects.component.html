@@ -1,5 +1,5 @@
 <div class="container">
-  @for (project of projects; track project) {
-  <app-project-item [project]="project" />
+  @for (project of projects; track project;let i = $index) {
+  <app-project-item [project]="project" class="animated-item" />
   }
 </div>
