@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { TMode } from '../core/types/theme-mode.type';
+import { ISkill } from '../core/interfaces/skill-interface';
 
 @Component({
   selector: 'app-skill-item',
@@ -10,10 +11,10 @@ import { TMode } from '../core/types/theme-mode.type';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SkillItemComponent {
-  @Input() skill!: { name: string; icon: string };
-  @Input() themeMode!: TMode | undefined;
+  public skill = input<ISkill>();
+  public themeMode = input<TMode | undefined>();
 
   public getIcon(icon: string): string {
-    return `skills/${icon}-${this.themeMode}.png`;
+    return `skills/${icon}-${this.themeMode()}.png`;
   }
 }
