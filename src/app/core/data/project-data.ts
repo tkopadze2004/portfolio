@@ -39,7 +39,6 @@ export const PROJECTS = [
       'TypeScript',
       'HTML',
       'SCSS',
-      'Angular Material',
       'RxJS',
       'Firebase',
     ],
