@@ -1,18 +1,17 @@
 <header>
-  <span class="text">Welcome!</span>
+  <span class="text"  routerLink="/" >Welcome!</span>
   @if (currentMode$ | ngrxPush ; as mode) {
-      <div class="cont">
-        <ul>
-          <li routerLink="/" [ngClass]="mode">Home</li>
-          <li routerLink="about" [ngClass]="mode">About</li>
-          <li routerLink="projects" [ngClass]="mode">Projects</li>
-        </ul>
-      <img
-        [src]="mode + '-mode.svg'"
-        alt="Toggle mode"
-        (click)="toggleMode(mode)"
-      />
-    </div>
-
+  <div class="cont">
+    <ul>
+      <li routerLink="/" [ngClass]="[mode, animateClass]">Home</li>
+      <li routerLink="about" [ngClass]="[mode, animateClass]">About</li>
+      <li routerLink="projects" [ngClass]="[mode, animateClass]">Projects</li>
+    </ul>
+    <img
+      [src]="mode + '-mode.svg'"
+      alt="Toggle mode"
+      (click)="toggleMode(mode)"
+    />
+  </div>
   }
 </header>

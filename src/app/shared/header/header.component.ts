@@ -24,6 +24,7 @@ import { RouterLink } from '@angular/router';
 export class HeaderComponent implements OnInit {
   private readonly store = inject(Store);
   public currentMode$: Observable<TMode> = this.store.select(selectThemeMode);
+  public animateClass = 'animate';
 
   public toggleMode(currentMode: TMode): void {
     const newMode: TMode = currentMode === 'dark' ? 'light' : 'dark';

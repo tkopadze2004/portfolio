@@ -15,7 +15,7 @@
   }
 
   #typingText {
-    border-right: 2px solid #3b82f6;
+    border-right: 2px solid #007292;
     padding-right: 14px;
     animation: blinkCursor 1s step-end infinite;
     font-size: 85px;
@@ -148,6 +148,6 @@
     border-color: transparent;
   }
   50% {
-    border-color: #3b82f6;
+    border-color: #007292;
   }
 }

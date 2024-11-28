@@ -13,6 +13,7 @@ header {
     font-weight: bolder;
     letter-spacing: 10px;
     font-family: "Nunito", sans-serif;
+    cursor: pointer;
   }
 
   .cont {
@@ -96,4 +97,13 @@ header {
       }
     }
   }
+}
+@keyframes pulse {
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+li.animate {
+  animation: pulse 1s infinite;
 }
