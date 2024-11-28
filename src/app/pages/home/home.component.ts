@@ -24,7 +24,7 @@ import { RouterLink } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   private readonly store: Store = inject(Store);
-  private text: string = 'Angular Developer ';
+  private text: string = 'Angular Developer';
   public displayedText: string = '';
   private typingSpeed: number = 100;
   public readonly footerMenu = FOOTER_MENU;

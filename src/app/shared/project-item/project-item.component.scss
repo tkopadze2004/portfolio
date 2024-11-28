@@ -57,7 +57,7 @@
   border-radius: 6px;
   font-size: 0.9rem;
   color: #007292;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   transition: background-color 0.3s ease;
 }
 
@@ -66,11 +66,12 @@
 }
 
 .item__link-minimal {
-  display: inline-flex;
+  display: flex;
+  max-width: fit-content;
   align-items: center;
   gap: 6px;
   font-size: 1.1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: #007292;
   text-decoration: none;
@@ -78,7 +79,7 @@
 }
 
 .item__link-minimal:hover {
-  color: #0056b3;
+  color: #065fbd;
 }
 
 .arrow-icon {
