@@ -13,7 +13,7 @@ export const PROJECTS = [
       'Firebase',
     ],
     link: 'https://alte-ecommerce-15c99.web.app/',
-    img: 'ecommerce.png',
+    img: 'projects/ecommerce.png',
   },
   {
     name: 'task manager',
@@ -28,7 +28,7 @@ export const PROJECTS = [
       'RxJS',
     ],
     link: 'https://task-manager-38a6d.web.app/',
-    img: 'task-manager.png',
+    img: 'projects/task-manager.png',
   },
   {
     name: 'fakeflix',
@@ -36,6 +36,6 @@ export const PROJECTS = [
 "Fakeflix is a modern movie browsing web app built with Angular v18, featuring Firebase for user authentication and integration with the TMDB API for real-time movie data. The app delivers a fully responsive design, optimized for various devices, with engaging features like a dynamic movie carousel, interactive elements, and detailed movie overlays. Users can securely log in, explore a wide range of movies, access detailed information, and easily sign out. Real-time TMDB data ensures up-to-date movie listings, while custom components enhance the user experience, providing seamless navigation and a visually captivating interface." ,
    skills: ['Angular 18', 'TypeScript', 'HTML', 'SCSS', 'RxJS', 'Firebase'],
     link: 'https://fakeflix-f0041.web.app/',
-    img: 'fakeflix.png',
+    img: 'projects/fakeflix.png',
   },
 ];
