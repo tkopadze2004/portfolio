@@ -5,7 +5,7 @@ import { TMode } from '../../core/types/theme-mode.type';
 import { Store } from '@ngrx/store';
 import { selectThemeMode } from '../../store/selectors/theme-mode.selectors';
 import { PushPipe } from '@ngrx/component';
-import { SKILLS } from '../../core/data/skills';
+import { SKILLS } from '../../core/data/skills-data';
 
 @Component({
   selector: 'app-about',

@@ -59,4 +59,8 @@ export const SKILLS = [
     name: 'swagger',
     icon: 'swagger',
   },
+  {
+    name: 'figma',
+    icon: 'figma',
+  },
 ];
