@@ -7,11 +7,11 @@
 
   <div class="intro-text">
     <p>
-      I am dedicated to writing clean, efficient code and delivering effective
-      solutions. My experience in fast-paced environments has taught me that
-      consistent effort leads to meaningful results. I view each project as an
-      opportunity for growth, driven by the challenge of solving complex
-      problems.
+      I focus on writing clean, efficient code and creating impactful solutions.
+      With experience in dynamic, fast-paced environments, I understand how
+      consistency and innovation drive meaningful results. I thrive on solving
+      complex problems and am always eager to take on new challenges that foster
+      collaboration and deliver value-driven outcomes.
     </p>
   </div>
 
@@ -19,13 +19,13 @@
 
   <div class="get-in-touch">
     <span class="contact"> Let's <span class="clr">Connect</span> </span>
-    <p>Don't hesitate to reach out!</p>
+    <div>Don't hesitate to reach out!</div>
     @for (menu of footerMenu; track $index) {
     <app-footer-link-item
       [links]="menu.links"
       [themeMode]="currentMode$ | ngrxPush"
-    >
-    </app-footer-link-item>
+    />
+
     }
   </div>
 </div>

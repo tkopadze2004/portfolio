@@ -1,5 +1,5 @@
 .container {
-  padding: 60px 120px 20px;
+  padding: 57px 120px 20px;
 
   .head {
     font-size: 100px;
@@ -26,7 +26,7 @@
   .intro-text {
     max-width: 43rem;
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 1.6;
     font-weight: 400;
     margin-top: 50px;
     font-family: "Inter", sans-serif;
@@ -47,10 +47,10 @@
       font-weight: bold;
     }
 
-    p {
+    div {
       font-family: "Inter", sans-serif;
       font-size: 18px;
-      margin-bottom: 1.5rem;
+      margin: 1.0625rem 0 1.5rem;
     }
   }
 
@@ -99,17 +99,17 @@
     .get-in-touch {
       margin-top: 90px;
 
-      p {
-        margin-bottom: 1rem;
+      div {
+        margin: 0.9375rem 0 1.3rem;
       }
     }
   }
 
   @media (max-width: 480px) {
-    padding: 30px 30px 20px;
+    padding: 40px 30px 20px;
 
     .head {
-      font-size: 50px;
+      font-size: 51px;
     }
 
     #typingText {
@@ -119,6 +119,8 @@
     .intro-text {
       font-size: 15px;
       line-height: 1.7;
+      margin-top: 36px;
+
     }
 
     .button {
@@ -129,14 +131,15 @@
     }
 
     .get-in-touch {
-      margin-top: 70px;
+      margin-top: 72px;
 
       .contact {
-        font-size: 32px;
+        font-size: 33px;
       }
 
-      p {
-        margin-bottom: 18px;
+      div {
+        margin: 0.875rem 0 1.2rem;
+        font-size: 17px;
       }
     }
   }
