@@ -94,6 +94,8 @@
   .item {
     flex-direction: column;
     text-align: center;
+    gap: 20px;
+    padding: 7px 20px;
   }
 
   .item__image img {
@@ -105,7 +107,16 @@
     justify-content: center;
   }
 
+  .item__tools li {
+    padding: 7px 17px;
+    font-size: 13px;
+  }
+
   .item__link-minimal {
     align-self: center;
+  }
+
+  .item__text {
+    font-size: 14px;
   }
 }
