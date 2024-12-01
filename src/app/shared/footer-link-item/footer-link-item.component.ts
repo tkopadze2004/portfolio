@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { TMode } from '../../../core/types/theme-mode.type';
-import { ILink } from '../../../core/interfaces/links-interface';
+import { ILink } from '../../core/interfaces/links-interface';
+import { TMode } from '../../core/types/theme-mode.type';
 
 @Component({
   selector: 'app-footer-link-item',

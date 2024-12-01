@@ -32,11 +32,11 @@ export class HeaderComponent implements OnInit {
     this.updateRootClass(currentMode, newMode);
   }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.updateRootClass('light', 'dark');
   }
 
-  private updateRootClass(oldMode: TMode, newMode: TMode) {
+  private updateRootClass(oldMode: TMode, newMode: TMode): void {
     document.body.classList.remove(oldMode);
     document.body.classList.add(newMode);
   }

@@ -6,18 +6,18 @@ import {
   OnInit,
 } from '@angular/core';
 import { FOOTER_MENU } from '../../core/data/footer-menu';
-import { FooterLinkItemComponent } from '../../shared/footer/footer-link-item/footer-link-item.component';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { selectThemeMode } from '../../store/selectors/theme-mode.selectors';
 import { PushPipe } from '@ngrx/component';
 import { TMode } from '../../core/types/theme-mode.type';
 import { RouterLink } from '@angular/router';
+import { FooterLinkItemComponent } from '../../shared/footer-link-item/footer-link-item.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FooterLinkItemComponent, PushPipe, RouterLink],
+  imports: [PushPipe, RouterLink, FooterLinkItemComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -31,11 +31,11 @@ export class HomeComponent implements OnInit {
   private readonly cdr = inject(ChangeDetectorRef);
   public currentMode$: Observable<TMode> = this.store.select(selectThemeMode);
 
-  ngOnInit() {
+  public ngOnInit(): void {
     this.startTyping();
   }
 
-  startTyping() {
+  public startTyping(): void {
     let index = 0;
     const interval = setInterval(() => {
       if (index < this.text.length) {
