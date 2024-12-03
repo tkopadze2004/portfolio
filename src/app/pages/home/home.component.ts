@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   public displayedText: string = '';
   private typingSpeed: number = 100;
   public readonly footerMenu = FOOTER_MENU;
-  private readonly cdr = inject(ChangeDetectorRef);
+  private readonly cdr: ChangeDetectorRef = inject(ChangeDetectorRef);
   public currentMode$: Observable<TMode> = this.store.select(selectThemeMode);
 
   public ngOnInit(): void {

@@ -4,6 +4,14 @@
   align-items: center;
   gap: 70px;
   padding: 40px 200px;
+
+  @media (max-width: 1600px) {
+    padding: 60px 150px;
+  }
+
+  @media (max-width: 1300px) {
+    padding: 20px 10px;
+  }
 }
 
 .animated-item {
@@ -20,17 +28,5 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@media (max-width: 1600px) {
-  .container {
-    padding: 60px 150px;
-  }
-}
-
-@media (max-width: 1300px) {
-  .container {
-    padding: 20px 10px;
   }
 }

@@ -13,37 +13,31 @@ body {
   &::-webkit-scrollbar-thumb {
     background-color: #007292;
     border-radius: 4px;
-    cursor: pointer;
   }
 
   &.dark {
     background-color: black;
-    background-image: radial-gradient(
-      rgba(255, 255, 255, 0.1) 1px,
-      transparent 1px
-    );
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
     background-size: 15px 15px;
     color: #f4f4ff;
   }
+
   &.light {
     position: relative;
     color: #333;
-  }
 
-  &.light::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #f3f3f3;
-    background-image: radial-gradient(
-      rgba(105, 41, 41, 0.681) 0.9px,
-      transparent 0.9px
-    );
-    background-size: 50px 50px;
-    filter: blur(2px);
-    z-index: -1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #f3f3f3;
+      background-image: radial-gradient(rgba(105, 41, 41, 0.681) 0.9px, transparent 0.9px);
+      background-size: 50px 50px;
+      filter: blur(2px);
+      z-index: -1;
+    }
   }
 }

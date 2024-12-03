@@ -1,16 +1,16 @@
 <div class="item">
   <div class="item__image">
-    <img [src]="project()!.img" alt="Project Thumbnail" />
+    <img [src]="project()!.img" alt="Project image" />
   </div>
   <div class="item__description">
-    <span class="item__title">{{ project()!.name }}</span>
-    <p class="item__text">{{ project()!.description }}</p>
-    <ul class="item__tools">
+    <span class="item__description--title">{{ project()!.name }}</span>
+    <p class="item__description--text">{{ project()!.description }}</p>
+    <ul class="item__description--tools">
       @for (skill of project()!.skills; track skill) {
-      <li>{{ skill }}</li>
+        <li>{{ skill }}</li>
       }
     </ul>
-    <a [href]="project()!.link" class="item__link-minimal">
+    <a [href]="project()!.link" class="item__description--link" aria-label="Live Demo">
       Live Demo
       <svg
         xmlns="http://www.w3.org/2000/svg"

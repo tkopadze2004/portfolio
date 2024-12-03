@@ -1,11 +1,11 @@
 <div class="container">
-  <div class="head">
+  <div class="container__head">
     <span>HI, </span> <br />
-    <span>I'M <span class="name">TAMTA</span></span> <br />
+    <span>I'M <span class="container__head--name">TAMTA</span></span> <br />
     <span id="typingText">{{ displayedText }}</span>
   </div>
 
-  <div class="intro-text">
+  <div class="container__intro-text">
     <p>
       I focus on writing clean, efficient code and creating impactful solutions.
       With experience in dynamic, fast-paced environments, I understand how
@@ -15,17 +15,16 @@
     </p>
   </div>
 
-  <button class="button" routerLink="projects">explore my Projects</button>
+  <button routerLink="projects">explore my Projects</button>
 
-  <div class="get-in-touch">
-    <span class="contact"> Let's <span class="clr">Connect</span> </span>
+  <div class="container__contact">
+    <span class="container__contact--title">Let's <span class="clr">Connect</span></span>
     <div>Don't hesitate to reach out!</div>
     @for (menu of footerMenu; track menu) {
-    <app-footer-link-item
-      [links]="menu.links"
-      [themeMode]="currentMode$ | ngrxPush"
-    />
-
+      <app-footer-link-item
+        [links]="menu.links"
+        [themeMode]="currentMode$ | ngrxPush"
+      />
     }
   </div>
 </div>

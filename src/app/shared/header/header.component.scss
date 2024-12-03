@@ -8,6 +8,7 @@ header {
   top: -1px;
   backdrop-filter: blur(6px);
   z-index: 1000;
+
   .text {
     font-size: 26px;
     font-weight: bolder;
@@ -18,7 +19,6 @@ header {
 
   .cont {
     display: flex;
-
     ul {
       display: flex;
       gap: 20px;
@@ -29,28 +29,25 @@ header {
         cursor: pointer;
         font-size: 20px;
         list-style: none;
-        transition: color 0.3s ease;
         font-weight: 600;
+        transition: color 0.3s ease;
 
         &::after {
           content: "";
           position: absolute;
           left: 0;
           bottom: -4px;
-          height: 2px;
-          width: 98%;
+          height: 1.99px;
+          width: 100%;
           transform: scaleX(0);
           transform-origin: left;
           transition: transform 0.3s ease;
+          background-color: inherit;
         }
 
         &:hover::after,
         &.active::after {
           transform: scaleX(1);
-        }
-
-        &::after {
-          background-color: inherit;
         }
 
         &.dark::after {
@@ -98,6 +95,7 @@ header {
     }
   }
 }
+
 @keyframes pulse {
   50% {
     transform: scale(1.05);

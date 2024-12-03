@@ -1,7 +1,7 @@
 <div class="links">
   @for (link of links(); track $index) {
   <a [href]="link.url">
-    <img [src]="getIcon(link)" alt="social icon" />
+    <img [src]="getIcon(link)" [alt]="link.name" />
   </a>
   }
 </div>
