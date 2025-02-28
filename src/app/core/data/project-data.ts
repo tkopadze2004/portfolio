@@ -33,9 +33,27 @@ export const PROJECTS = [
   {
     name: 'fakeflix',
     description:
-"Fakeflix is a modern movie browsing web app built with Angular v18, featuring Firebase for user authentication and integration with the TMDB API for real-time movie data. The app delivers a fully responsive design, optimized for various devices, with engaging features like a dynamic movie carousel, interactive elements, and detailed movie overlays. Users can securely log in, explore a wide range of movies, access detailed information, and easily sign out. Real-time TMDB data ensures up-to-date movie listings, while custom components enhance the user experience, providing seamless navigation and a visually captivating interface." ,
-   skills: ['Angular 18', 'TypeScript', 'HTML', 'SCSS', 'RxJS', 'Firebase'],
+      'Fakeflix is a modern movie browsing web app built with Angular v18, featuring Firebase for user authentication and integration with the TMDB API for real-time movie data. The app delivers a fully responsive design, optimized for various devices, with engaging features like a dynamic movie carousel, interactive elements, and detailed movie overlays. Users can securely log in, explore a wide range of movies, access detailed information, and easily sign out. Real-time TMDB data ensures up-to-date movie listings, while custom components enhance the user experience, providing seamless navigation and a visually captivating interface.',
+    skills: ['Angular 18', 'TypeScript', 'HTML', 'SCSS', 'RxJS', 'Firebase'],
     link: 'https://fakeflix-f0041.web.app/',
     img: 'projects/fakeflix.png',
+  },
+
+  {
+    name: 'recipe-space',
+    description: `Recipe-Space is a full-stack web application designed for discovering, managing, and organizing recipes effortlessly. Users can add, edit, delete, and browse recipes, with a search feature that quickly finds recipes by ingredient or title.
+    Built with Angular, NestJS, TypeScript, RxJS, and Angular Material, Recipe Space delivers a fast, responsive, and user-friendly experience. Recipe data is stored securely in MongoDB Atlas, while the backend is hosted on Railway for reliable performance. The front end is deployed on Firebase, ensuring fast and scalable hosting. ImgBB handles image uploads seamlessly, providing smooth media integration.
+    This project showcases my expertise in full-stack development, focusing on performance optimization, intuitive UI design, and seamless backend integration.`,
+    skills: [
+      'Angular 18',
+      'TypeScript',
+      'NestJS',
+      'RxJS',
+      'HTML',
+      'SCSS',
+      'MongoDB',
+    ],
+    link: 'https://recipe-space-6dece.web.app/',
+    img: 'projects/recipe-space.png',
   },
 ];

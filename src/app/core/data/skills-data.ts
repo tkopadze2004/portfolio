@@ -12,6 +12,14 @@ export const SKILLS = [
     icon: 'ts',
   },
   {
+    name: 'NodeJs',
+    icon: 'nodejs',
+  },
+  {
+    name: 'NestJs',
+    icon: 'nestjs',
+  },
+  {
     name: 'ngrx',
     icon: 'ngrx',
   },
@@ -48,12 +56,16 @@ export const SKILLS = [
     icon: 'npm',
   },
   {
-    name: 'postman',
-    icon: 'postman',
+    name: 'mongodb',
+    icon: 'mongodb',
   },
   {
     name: 'firebase',
     icon: 'firebase',
+  },
+  {
+    name: 'postman',
+    icon: 'postman',
   },
   {
     name: 'swagger',

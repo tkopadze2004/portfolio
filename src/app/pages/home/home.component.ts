@@ -24,7 +24,7 @@ import { FooterLinkItemComponent } from '../../shared/footer-link-item/footer-li
 })
 export class HomeComponent implements OnInit {
   private readonly store: Store = inject(Store);
-  private text: string = 'Angular Developer';
+  private text: string = 'Software Engineer ';
   public displayedText: string = '';
   private typingSpeed: number = 100;
   public readonly footerMenu = FOOTER_MENU;
