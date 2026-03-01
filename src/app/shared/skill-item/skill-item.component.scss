@@ -13,3 +13,26 @@
     width: 50px;
   }
 }
+
+.cursor-label {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  background: #007292;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 114, 146, 0.3);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  &--visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

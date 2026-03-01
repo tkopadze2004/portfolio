@@ -1,21 +1,27 @@
 <div class="container">
-  <div class="container__head">
-    <span>HI, </span> <br />
-    <span>I'M <span class="container__head--name">TAMTA</span></span> <br />
-    <span id="typingText">{{ displayedText }}</span>
-  </div>
+  <div class="container__hero">
+    <div class="container__hero--content">
+      <div class="container__head">
+        <span>HI, </span> <br />
+        <span>I'M <span class="container__head--name">TAMTA</span></span> <br />
+        <span id="typingText">{{ displayedText }}</span>
+      </div>
 
-  <div class="container__intro-text">
-    <p>
-      I focus on writing clean, efficient code and creating impactful solutions.
-      With experience in dynamic, fast-paced environments, I understand how
-      consistency and innovation drive meaningful results. I thrive on solving
-      complex problems and am always eager to take on new challenges that foster
-      collaboration and deliver value-driven outcomes.
-    </p>
-  </div>
+      <div class="container__intro-text">
+        <p>
+          I build fast, scalable web apps across the full stack — from Angular frontends
+          to NestJS APIs and MongoDB databases. I care about clean architecture,
+          readable code, and UIs that actually feel good to use.
+        </p>
+      </div>
 
-  <button routerLink="projects">explore my Projects</button>
+      <button routerLink="projects">explore my Projects</button>
+    </div>
+
+    <div class="container__hero--photo">
+      <img src="profile.jpg" alt="Tamta" />
+    </div>
+  </div>
 
   <div class="container__contact">
     <span class="container__contact--title">Let's <span class="clr">Connect</span></span>

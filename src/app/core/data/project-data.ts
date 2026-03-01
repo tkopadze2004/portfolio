@@ -38,7 +38,20 @@ export const PROJECTS = [
     link: 'https://fakeflix-f0041.web.app/',
     img: 'projects/fakeflix.png',
   },
-
+  {
+    name: 'animal farm',
+    description: `Animal Farm is an interactive full-stack web application inspired by George Orwell's classic novel, built with Angular 18 and TypeScript on the frontend, powered by a NestJS REST API and MongoDB on the backend. Application state is managed with NgRx, ensuring predictable data flow across the entire app. The UI is styled with custom SCSS, delivering a clean and expressive interface. Users can feed each animal, triggering grateful reactions directed at the pig's portrait, while a thank-you counter — persisted in MongoDB — tracks each animal's loyalty. Clicking the pig's portrait triggers a CSS spin animation revealing a new face, accompanied by a fitting anthem via the Web Audio API. The project demonstrates end-to-end full-stack architecture: from Angular component design and NgRx state management to RESTful NestJS endpoints and MongoDB data persistence.`,
+    skills: [
+      'Angular 18',
+      'NestJS',
+      'TypeScript',
+      'NgRx',
+      'MongoDB',
+      'SCSS',
+    ],
+    link: 'https://animal-farm-456c4.web.app/',
+    img: 'projects/animal-farm.png',
+  },
   {
     name: 'recipe-space',
     description: `Recipe-Space is a full-stack web application designed for discovering, managing, and organizing recipes effortlessly. Users can add, edit, delete, and browse recipes, with a search feature that quickly finds recipes by ingredient or title.

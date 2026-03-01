@@ -1,6 +1,30 @@
 .container {
   padding: 57px 120px 20px;
 
+  &__hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+    &--content {
+      flex: 1;
+    }
+
+    &--photo {
+      flex-shrink: 0;
+
+      img {
+        width: 380px;
+        height: 380px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #007292;
+        box-shadow: 0 8px 32px rgba(0, 114, 146, 0.25);
+      }
+    }
+  }
+
   &__head {
     font-size: 100px;
     font-weight: bold;
@@ -76,6 +100,15 @@
   @media (max-width: 1024px) {
     padding: 40px 35px 20px;
 
+    &__hero {
+      gap: 30px;
+
+      &--photo img {
+        width: 220px;
+        height: 220px;
+      }
+    }
+
     &__head {
       font-size: 70px;
 
@@ -105,6 +138,21 @@
 
   @media (max-width: 480px) {
     padding: 40px 30px 20px;
+
+    &__hero {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 24px;
+
+      &--content {
+        width: 100%;
+      }
+
+      &--photo img {
+        width: 160px;
+        height: 160px;
+      }
+    }
 
     &__head {
       font-size: 51px;

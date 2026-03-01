@@ -1,3 +1,19 @@
-<div class="item">
+<div
+  class="item"
+  (mouseenter)="onMouseEnter()"
+  (mouseleave)="onMouseLeave()"
+  (mousemove)="onMouseMove($event)"
+>
   <img [src]="getIcon(skill()!.icon)" [alt]="skill()!.name" class="item__icon" />
 </div>
+
+@if (isHovered()) {
+  <div
+    class="cursor-label"
+    [class.cursor-label--visible]="isVisible()"
+    [style.left.px]="cursorX() + 16"
+    [style.top.px]="cursorY() + 16"
+  >
+    {{ skill()!.name }}
+  </div>
+}
